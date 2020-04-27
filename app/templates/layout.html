@@ -1,0 +1,33 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+	{{ title }}
+{% endblock %}
+
+{% block navbar %}
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+		<div class="container">
+			<a class="navbar-brabd", href="#">
+				
+			</a>
+			<div>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
+							Encabezado del Index
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+		<div class="row">
+			{% block container %}
+			{% endblock %}
+		</div>
+	</div>
+{% endblock %}
